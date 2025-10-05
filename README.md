@@ -78,14 +78,7 @@ Este repositorio contiene dos ejemplos de código que trabajan en conjunto con e
 
 ---
 
-## Cómo usar
-1. Cargar `esp32_mqtt_rtc.ino` en la ESP32.  
-2. Cargar `arduino_uno_rtos_lcd.ino` en el Arduino UNO.  
-3. Conectar ambos al **RTC DS3231** compartiendo líneas SDA/SCL.  
-4. Conectar el LCD al Arduino UNO.  
-5. Configurar las credenciales WiFi y la IP del broker MQTT en el código de la ESP32.  
-6. Iniciar el broker MQTT (ej. Mosquitto) y suscribirse al tópico `esp32/hora`.  
+## Ver esquema
+https://wokwi.com/projects/444008078203669505
 
----
 
-## Ejemplo de salida ESP32
