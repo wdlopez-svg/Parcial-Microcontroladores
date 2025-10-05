@@ -6,7 +6,7 @@ Este repositorio contiene dos ejemplos de código que trabajan en conjunto con e
 
 ---
 
-## 🚀 Hardware requerido
+## Hardware requerido
 - Módulo RTC DS3231  
 - ESP32 DevKit V1  
 - Arduino UNO  
@@ -15,13 +15,13 @@ Este repositorio contiene dos ejemplos de código que trabajan en conjunto con e
 
 ---
 
-## 📂 Archivos del proyecto
+## Archivos del proyecto
 - **`esp32_mqtt_rtc.ino`** → Código para el ESP32.  
 - **`arduino_uno_rtos_lcd.ino`** → Código para el Arduino UNO.  
 
 ---
 
-## ⚡ ESP32: Publicación de la hora vía MQTT
+## ESP32: Publicación de la hora vía MQTT
 
 ### Funcionalidad
 - Se conecta a una red WiFi definida en el código.  
@@ -43,7 +43,7 @@ Este repositorio contiene dos ejemplos de código que trabajan en conjunto con e
 
 ---
 
-## 🖥️ Arduino UNO: Visualización y gestión con FreeRTOS
+## Arduino UNO: Visualización y gestión con FreeRTOS
 
 ### Funcionalidad
 - Configura el UNO como **esclavo I2C** en la dirección `0x08`.  
@@ -69,7 +69,7 @@ Este repositorio contiene dos ejemplos de código que trabajan en conjunto con e
 
 ---
 
-## 📡 Integración ESP32 + Arduino UNO
+## Integración ESP32 + Arduino UNO
 - El **ESP32** actúa como maestro I2C y puede solicitar la hora al **UNO**, que responde con el string generado en `requestEvent()`.  
 - En paralelo, el ESP32 publica por MQTT la hora leída directamente desde el RTC.  
 - De esta forma, se tiene un sistema híbrido:  
@@ -78,7 +78,7 @@ Este repositorio contiene dos ejemplos de código que trabajan en conjunto con e
 
 ---
 
-## 🔧 Cómo usar
+## Cómo usar
 1. Cargar `esp32_mqtt_rtc.ino` en la ESP32.  
 2. Cargar `arduino_uno_rtos_lcd.ino` en el Arduino UNO.  
 3. Conectar ambos al **RTC DS3231** compartiendo líneas SDA/SCL.  
@@ -88,4 +88,4 @@ Este repositorio contiene dos ejemplos de código que trabajan en conjunto con e
 
 ---
 
-## 📌 Ejemplo de salida ESP32
+## Ejemplo de salida ESP32
